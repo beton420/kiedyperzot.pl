@@ -1,2 +1,4 @@
 # kiedyperzot.pl
-wielki odlicznik do perzota
+To jest klasycznie wyrobiny ręcznie shitpost o perżocie kolegi.
+
+![peugot-logo](.github/assets/peugot-logo.gif)
