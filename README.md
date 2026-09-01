@@ -6,7 +6,7 @@ To jest klasycznie wyrobiony ręcznie shitpost o peugeocie kolegi.
 
 ## Getting Started
 
-This project uses pnpm, make sure to set it up before going forward.
+This project uses [pnpm](https://pnpm.io/), make sure to set it up before going forward.
 
 ### Installing dependencies
 
