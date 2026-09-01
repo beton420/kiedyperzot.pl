@@ -1,4 +1,5 @@
 # kiedyperzot.pl
-To jest klasycznie wyrobiny ręcznie shitpost o perżocie kolegi.
 
-![peugot-logo](.github/assets/peugot-logo.gif)
+To jest klasycznie wyrobiony ręcznie shitpost o peugeocie kolegi.
+
+![peugeot-logo](.github/assets/peugeot-logo.gif)
