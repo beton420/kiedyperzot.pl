@@ -1,0 +1,11 @@
+.main {
+    text-align: center;
+}
+
+.timer {
+    font-family: Impact;
+    font-style: italic;
+    font-size: 100px;
+    justify-content: center;
+    height: 600px;
+}

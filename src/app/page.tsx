@@ -1,3 +1,14 @@
+import { Timer } from "./timer";
+import "./style.css";
+
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  return (
+    <div className="main">
+      <h1>KiedyPerzot</h1>
+      <Timer />
+      <footer>
+        <p>&copy; Chodnia Co.</p>
+      </footer>
+    </div>
+  );
 }
