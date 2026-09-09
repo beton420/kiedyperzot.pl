@@ -1,4 +1,4 @@
-import { CountdownTimer } from "./components/timer";
+import { CountdownTimer } from "./timer";
 import "./style.css";
 
 export default function Page() {
