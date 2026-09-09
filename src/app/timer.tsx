@@ -23,7 +23,7 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
 
   //Używanie 'useEffect' to sprawdzenia czy użytkownik załadował stronę, co powoduje uruchomienie skryptu odliczania.
     const calculateTimeLeft = () => {
-      const difference = +new Date(targetDate) - +new Date();
+      const difference = new Date(targetDate).getTime() - new Date().getTime();
       let newTimeLeft: TimeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
 
       //Sprawdzenie czy odliczanie zostało zakończone, żeby timer nie liczył poniżej zera.
