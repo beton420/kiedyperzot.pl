@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 interface CountdownTimerProps {
-  targetDate: string | Date;
+  targetDate: Date;
 }
 
 interface TimeLeft {
@@ -22,9 +22,8 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
   });
 
   //Używanie 'useEffect' to sprawdzenia czy użytkownik załadował stronę, co powoduje uruchomienie skryptu odliczania.
-  useEffect(() => {
     const calculateTimeLeft = () => {
-      const difference = +new Date(targetDate) - new Date().getTime();
+      const difference = +new Date(targetDate) - +new Date();
       let newTimeLeft: TimeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
 
       //Sprawdzenie czy odliczanie zostało zakończone, żeby timer nie liczył poniżej zera.
@@ -44,17 +43,19 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
       return newTimeLeft;
     };
 
-    //Zapobieganie opóźnienia.
-    setTimeLeft(calculateTimeLeft());
+    //Używanie 'useEffect' to sprawdzenia czy użytkownik załadował stronę, co powoduje uruchomienie skryptu odliczania.
+    useEffect(() => {
+      //Zapobieganie opóźnienia.
+        setTimeLeft(calculateTimeLeft());
 
-    //Wywoływanie odświerzenia licznika co sekunde.
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
+      //Wywoływanie odświerzenia licznika co sekunde.
+        const timer = setInterval(() => {
+          setTimeLeft(calculateTimeLeft());
+        }, 1000);
 
-    //Zapobieganie memory leak
-    return () => clearInterval(timer);
-  }, [targetDate]);
+      //Zapobieganie memory leak
+        return () => clearInterval(timer);
+      }, [targetDate]);
 
   return (
     <div>
