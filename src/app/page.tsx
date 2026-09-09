@@ -1,3 +1,15 @@
+import { CountdownTimer } from "./timer";
+import "./style.css";
+
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  const targetDate = new Date("2027-07-04T23:59:59")
+  return (
+    <div className="main">
+      <h1>KiedyPerzot</h1>
+      <CountdownTimer targetDate={targetDate} />
+      <footer>
+        <p>&copy; Chodnia Co.</p>
+      </footer>
+    </div>
+  );
 }
