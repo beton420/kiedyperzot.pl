@@ -61,10 +61,10 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
   return (
     <div className={styles.container}>
       {Object.keys(timeLeft).map((key, i) => (
-        <p className={timeLeft.hours < 2 ? styles.soon : ""} key={i}>
-          {timeLeft[key]}
-          {i != Object.keys(timeLeft).length - 1 ? ":" : ""}
-        </p>
+          <p className={timeLeft.hours < 2 ? styles.soon : ""} key={i}>
+            {String(timeLeft[key]).padStart(2, '0')}
+            {i != Object.keys(timeLeft).length - 1 ? ":" : ""}
+          </p>
       ))}
     </div>
   );
