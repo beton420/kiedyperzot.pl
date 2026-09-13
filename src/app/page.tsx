@@ -1,5 +1,4 @@
-import { CountdownTimer } from "./timer";
-import "./style.css";
+import { CountdownTimer } from "@/components/timer"
 
 export default function Page() {
   const targetDate = new Date("2027-07-11T23:59:59")

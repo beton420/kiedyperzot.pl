@@ -59,7 +59,7 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
 
   return (
     <div>
-      <div className="Timer">
+      <div>
         <p>Dni</p>
         <span>{timeLeft.days}</span>
       </div>
