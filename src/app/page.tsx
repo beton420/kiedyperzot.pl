@@ -6,9 +6,6 @@ export default function Page() {
     <div className="main">
       <h1>KiedyPerzot</h1>
       <CountdownTimer targetDate={targetDate} />
-      <footer>
-        <p>&copy; Chodnia Co.</p>
-      </footer>
     </div>
   );
 }

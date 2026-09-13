@@ -9,6 +9,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <footer>
+          <p>&copy; Chodnia Co.</p>
+        </footer>
       </body>
     </html>
   );
