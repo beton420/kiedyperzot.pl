@@ -1,6 +1,6 @@
 "use client";
-import finalHours from "@/public/music/final-hours.mp3";
 import { useEffect, useRef } from "react";
+import finalHours from "@/public/music/final-hours.mp3";
 
 function Music() {
   return (
