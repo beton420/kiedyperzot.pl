@@ -1,4 +1,5 @@
 import { CountdownTimer } from "@/components/timer"
+import Music from "components/music"
 
 export default function Page() {
   const targetDate = new Date("2027-07-11T23:59:59")
@@ -6,6 +7,7 @@ export default function Page() {
     <div className="main">
       <h1>KiedyPerzot</h1>
       <CountdownTimer targetDate={targetDate} />
+      <Music/>
     </div>
   );
 }
