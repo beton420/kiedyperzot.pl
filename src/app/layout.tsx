@@ -10,6 +10,7 @@ export default function RootLayout({
       <body>
         {children}
         <footer>
+          <p>kiedyperzot.pl is not affiliated with Peugeot and Stellantis N.V.</p>
           <p>&copy; Chodnia Co.</p>
         </footer>
       </body>
