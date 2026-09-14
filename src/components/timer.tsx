@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import styles from './css/timer.module.css';
 
 interface CountdownTimerProps {
   targetDate: Date;
@@ -58,26 +59,13 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
       }, [targetDate]);
 
   return (
-    <div>
-      <div className="Timer">
-        <p>Dni</p>
-        <span>{timeLeft.days}</span>
-      </div>
-      <div>
-        <p>Godziny</p>
-        <span>{String(timeLeft.hours)}</span>
-      </div>
-      <div>
-        <p>Minuty</p>
-        <span>{String(timeLeft.minutes)}</span>
-      </div>
-      <div>
-        <p>Sekundy:</p>
-        <span>{String(timeLeft.seconds)}</span>
-      </div>
-      <div>
-        <p>Odliczanie do daty: { targetDate.toString() }</p>
-      </div>
+    <div className={styles.container}>
+      {Object.keys(timeLeft).map((key, i) => (
+          <p className={timeLeft.hours < 2 ? styles.soon : ""} key={i}>
+            {String(timeLeft[key]).padStart(2, '0')}
+            {i != Object.keys(timeLeft).length - 1 ? ":" : ""}
+          </p>
+      ))}
     </div>
   );
 }
