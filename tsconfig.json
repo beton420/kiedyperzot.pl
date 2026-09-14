@@ -2,6 +2,7 @@
   "compilerOptions": {
     "paths": {
       "*": ["./src/*"],
+      "@/public/*": ["./public/*"],
       "@/components/*": ["./src/components/*"],
     },
     "target": "ES2017",
