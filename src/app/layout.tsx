@@ -1,3 +1,4 @@
+import Header from '@/components/header';
 import './global.css';
 
 export default function RootLayout({
@@ -8,9 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>
-          <h1>KiedyPerzot</h1>
-        </header>
+        <Header/>
         {children}
         <footer>
           <p>kiedyperzot.pl is not affiliated with Peugeot and Stellantis N.V.</p>
