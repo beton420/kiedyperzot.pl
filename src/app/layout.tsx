@@ -8,6 +8,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <header>
+          <h1>KiedyPerzot</h1>
+        </header>
         {children}
         <footer>
           <p>kiedyperzot.pl is not affiliated with Peugeot and Stellantis N.V.</p>
