@@ -1,8 +1,7 @@
 # kiedyperzot.pl
 
-To jest klasycznie wyrobiony ręcznie shitpost o peugeocie kolegi.
-
-![peugeot-logo](https://github.com/beton420/kiedyperzot.pl/blob/main/docs/images/peugeot-logo.gif?raw=true)
+![banner](https://github.com/beton420/kiedyperzot.pl/blob/main/docs/images/banner.png?raw=true)
+<small>kiedyperzot.pl is not affiliated with Peugeot and Stellantis N.V.</small>
 
 ## Getting Started
 
