@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo {
+    color: black;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    opacity: 100%;
+}
+
+.spinningPeugeot {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    opacity: 0%;
+    position: absolute;
+}
+
+.logoContainer {
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > .logo {
+        animation-name: fadeIn;
+        animation-duration: 0.25s;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
+
+    & > .spinningPeugeot {
+        animation-name: fadeOut;
+        animation-duration: 0.25s;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
+
+    &:hover {
+        & > .logo {
+            animation-name: fadeOut;
+            animation-duration: 0.25s;
+            animation-fill-mode: forwards;
+        }
+
+        & > .spinningPeugeot {
+            animation-name: fadeIn;
+            animation-duration: 0.25s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
